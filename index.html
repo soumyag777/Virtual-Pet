@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Pocket Pet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- adopt screen -->
+  <section class="card" id="adoptScreen">
+    <h1>✿ pocket pet ✿</h1>
+    <p class="sub">choose a little friend to take care of</p>
+
+    <div class="choices" id="choices"></div>
+
+    <label class="name-label" for="nameInput">give them a name</label>
+    <input id="nameInput" class="name-input" type="text" maxlength="14" placeholder="e.g. Bean">
+
+    <button class="big-btn" id="adoptBtn" disabled>adopt 💕</button>
+  </section>
+
+  <!-- pet screen -->
+  <section class="card hidden" id="petScreen">
+    <div class="pet-top">
+      <div>
+        <div class="pet-name" id="petName"></div>
+        <div class="pet-age" id="petAge"></div>
+      </div>
+      <button class="tiny-btn" id="newPetBtn">new pet</button>
+    </div>
+
+    <div class="room" id="room">
+      <div class="bubble" id="bubble"></div>
+      <div class="pet" id="pet"><span id="petEmoji"></span></div>
+      <div class="shadow"></div>
+      <div class="zzz" id="zzz">z z z</div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="label">🍽️ full</span>
+        <div class="bar"><div class="fill" id="barFood"></div></div>
+      </div>
+      <div class="stat">
+        <span class="label">💖 happy</span>
+        <div class="bar"><div class="fill" id="barHappy"></div></div>
+      </div>
+      <div class="stat">
+        <span class="label">⚡ energy</span>
+        <div class="bar"><div class="fill" id="barEnergy"></div></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="act" data-act="pet"><span>🤚</span>pet</button>
+      <button class="act" data-act="feed"><span>🍖</span>feed</button>
+      <button class="act" data-act="play"><span>🎾</span>play</button>
+      <button class="act" data-act="sleep"><span>🌙</span>sleep</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
